@@ -1,0 +1,31 @@
+{
+    "headerElements": [
+        { "label": "Welfare aziendale", "link": "/welfare" },
+        { "label": "Chi siamo", "link": "/about-us" },
+        { "label": "I nostri servizi", "link": "/services" },
+        { "label": "Blog", "link": "/blog" }
+    ],
+
+    "carouselElements": [
+        { "label": "Cos'è il Welfare aziendale?", "text": "Tutti ne parlano ma pochi conoscono il suo potenziale", "imgUrl": "/src/assets/icon-hand.png" },
+        { "label": "Come posso attrarre?", "text": "Fidelizza e attrai nuovi talenti con un piano welfare mirato", "imgUrl": "/src/assets/icon-magnet.png" },
+        { "label": "Normative e vantaggi fiscali", "text": "Risparmiare è facile grazie al tuo nuovo piano welfare", "imgUrl": "/src/assets/icon-piggy.png" },
+        { "label": "Storie attrattive", "text": "Ascolta le testimonianze di chi ha migliorato il proprio stile di vita", "imgUrl": "/src/assets/barbell-hand.png" }
+    ],
+
+    "footerElements": {
+        "Chi siamo": [
+            { "label": "Vision & Mission", "link": "/vision-mission" },
+            { "label": "Il gruppo Omninext", "link": "/omninext" },
+            { "label": "Contattaci", "link": "/contact-us" }
+        ],
+        "Soluzioni welfare": [
+            { "label": "Flexible benefit", "link": "/flexible-benefit" },
+            { "label": "Premio di risultato", "link": "/reward" },
+            { "label": "Performance Management", "link": "/performance-management" }
+        ],
+        "Seguici su": [
+            { "label": "Linkedin", "link": "/linkedin" }
+        ]
+    }
+}
