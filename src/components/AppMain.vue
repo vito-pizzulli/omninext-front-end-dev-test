@@ -1,14 +1,20 @@
 <template>
     <div id="app-main">
         <main>
-            <h1>Main</h1>
+            <PrimaryContent />
         </main>
     </div>
 </template>
 
 <script>
+    import PrimaryContent from './PrimaryContent.vue';
+
     export default {
-        name: 'AppMain'
+        name: 'AppMain',
+
+        components: {
+            PrimaryContent
+        }
     }
 </script>
 
