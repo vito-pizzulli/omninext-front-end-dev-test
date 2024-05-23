@@ -6,6 +6,40 @@
         { "label": "Blog", "link": "/blog" }
     ],
 
+    "goPlanElements": {
+        "name": "Piano GO!",
+        "price": "€12,50",
+        "vantages": [
+            "Utenti illimitati",
+            "Piattaforma MySarma",
+            "Gestione del contratto online",
+            "MySarma Welfare Card (fino a 258 €)",
+            "Importi personalizzabili online",
+            "Sconti e Coupon"
+        ],
+        "buttonText": "Attiva Piano GO!",
+        "backgroundColor": "#e6ecf9"
+    },
+
+    "ProPlanElements": {
+        "name": "Piano PRO!",
+        "price": "€22,80",
+        "vantages": [
+            "Utenti illimitati",
+            "Welfare Guru",
+            "Piattaforma MySarma",
+            "Gestione del contratto online",
+            "Credito Welfare (illimitato)",
+            "Importi personalizzabili online",
+            "Gestione Scadenziata degli Importi",
+            "Gestione di più borsellini welfare",
+            "Flexible Benefit",
+            "Sconti e Coupon"
+        ],
+        "buttonText": "Calcola preventivo",
+        "backgroundColor": "#e2e1f4"
+    },
+
     "carouselElements": [
         { "label": "Cos'è il Welfare aziendale?", "text": "Tutti ne parlano ma pochi conoscono il suo potenziale", "imgUrl": "/src/assets/icon-hand.png" },
         { "label": "Come posso attrarre?", "text": "Fidelizza e attrai nuovi talenti con un piano welfare mirato", "imgUrl": "/src/assets/icon-magnet.png" },
