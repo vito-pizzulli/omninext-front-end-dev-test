@@ -1,0 +1,63 @@
+<template>
+    <div class="pricing-balloon" :style="{ backgroundColor: backgroundColor }">
+        <div class="desktop">
+            <p class="big">{{ name }}</p>
+            <p>a partire da</p>
+            <p>{{ price }}</p>
+            <p>all'anno per utente</p>
+            <hr>
+            <ul>
+                <li v-for="(vantage, index) in vantages" :key="index">{{ vantage }}</li>
+            </ul>
+            <button>{{ buttonText }}</button>
+            <p>Vuoi maggiori informazioni sul piano?</p>
+            <p>Scopri di più</p>
+        </div>
+
+        <div class="mobile">
+            <p class="big">{{ name }}</p>
+            <p>a partire da</p>
+            <p>{{ price }}</p>
+            <p>all'anno per utente</p>
+            <hr>
+            <button>{{ buttonText }}</button>
+            <p>Vuoi maggiori informazioni sul piano?</p>
+            <p>Scopri di più</p>
+        </div>
+        
+    </div>
+</template>
+
+<script>
+    export default {
+        name: 'PricingBalloon',
+
+        props: {
+            name: String,
+            price: String,
+            vantages: Array,
+            buttonText: String,
+            backgroundColor: String
+        }
+    }
+</script>
+
+<style lang="scss" scoped>
+    @use '../styles/partials/variables' as *;
+    @use '../styles/partials/mixins' as *;
+
+    div.pricing-balloon {
+        width: 401px;
+        height: 697px;
+        padding: 1rem;
+        border-radius: 10px;
+
+        @media screen and (max-width: 767px) {
+            height: 410px;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translate(-50%, -50%);
+        }
+    }
+</style>

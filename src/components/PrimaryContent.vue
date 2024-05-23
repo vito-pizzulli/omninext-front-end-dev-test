@@ -7,7 +7,7 @@
                     <p class="big">MySarma nasce con l'obiettivo di supportare le aziende a rispondere concretamente ai bisogni di welfare dei propri dipendenti e collaboratori.</p>
                 </div>
                 <div class="right-side">
-                    <PricingBalloonBig 
+                    <PricingBalloon
                         :name="goPlanElements.name"
                         :price="goPlanElements.price"
                         :vantages="goPlanElements.vantages"
@@ -23,7 +23,7 @@
         <div class="mobile">
             <h2>Il Welfare aziendale a portata di PMI</h2>
             <p class="big">MySarma nasce con l'obiettivo di supportare le aziende a rispondere concretamente ai bisogni di welfare dei propri dipendenti e collaboratori.</p>
-            <PricingBalloonSmall 
+            <PricingBalloon 
                 :name="goPlanElements.name"
                 :price="goPlanElements.price"
                 :buttonText="goPlanElements.buttonText"
@@ -34,8 +34,7 @@
 </template>
 
 <script>
-    import PricingBalloonBig from './PricingBalloonBig.vue';
-    import PricingBalloonSmall from './PricingBalloonSmall.vue';
+    import PricingBalloon from './PricingBalloon.vue';
     import { goPlanElements } from '/data/data.json';
 
     export default {
@@ -48,8 +47,7 @@
         },
 
         components: {
-            PricingBalloonBig,
-            PricingBalloonSmall
+            PricingBalloon
         }
     }
 </script>
@@ -68,6 +66,7 @@
 
         @media screen and (max-width: 767px) {
             background-position: 35%;
+            height: 865px;
         }
 
         div.desktop div.container {
