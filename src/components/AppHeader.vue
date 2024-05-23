@@ -1,15 +1,21 @@
 <template>
     <div id="app-header">
-        <header>
-            <h1>Header</h1>
+        <header id="header">
+            <HeaderNavbar />
         </header>
     </div>
 </template>
 
 <script>
-    export default {
-        name: 'AppHeader'
+import HeaderNavbar from './HeaderNavbar.vue';
+
+export default {
+    name: 'AppHeader',
+
+    components: {
+        HeaderNavbar
     }
+}
 </script>
 
 <style lang="scss" scoped>
