@@ -1,27 +1,41 @@
 <template>
     <div id="primary-content">
-        <div class="desktop container">
-            <div class="left-side">
-                <h1>Il Welfare aziendale a portata di PMI</h1>
-                <p class="big">MySarma nasce con l'obiettivo di supportare le aziende a rispondere concretamente ai bisogni di welfare dei propri dipendenti e collaboratori.</p>
+        <div class="desktop">
+            <div class="container">
+                <div class="left-side">
+                    <h1>Il Welfare aziendale a portata di PMI</h1>
+                    <p class="big">MySarma nasce con l'obiettivo di supportare le aziende a rispondere concretamente ai bisogni di welfare dei propri dipendenti e collaboratori.</p>
+                </div>
+                <div class="right-side">
+                    <PricingBalloonBig 
+                        :name="goPlanElements.name"
+                        :price="goPlanElements.price"
+                        :vantages="goPlanElements.vantages"
+                        :buttonText="goPlanElements.buttonText"
+                        :backgroundColor="goPlanElements.backgroundColor"
+                    />
+                    <p>Cerchi un piano a misura per la tua azienda?</p>
+                    <p>Scopri il piano PRO</p>
+                </div>
             </div>
-            <div class="right-side">
-                <PricingBalloon 
-                    :name="goPlanElements.name"
-                    :price="goPlanElements.price"
-                    :vantages="goPlanElements.vantages"
-                    :buttonText="goPlanElements.buttonText"
-                    :backgroundColor="goPlanElements.backgroundColor"
-                />
-                <p>Cerchi un piano a misura per la tua azienda?</p>
-                <p>Scopri il piano PRO</p>
-            </div>
+        </div>
+
+        <div class="mobile">
+            <h2>Il Welfare aziendale a portata di PMI</h2>
+            <p class="big">MySarma nasce con l'obiettivo di supportare le aziende a rispondere concretamente ai bisogni di welfare dei propri dipendenti e collaboratori.</p>
+            <PricingBalloonSmall 
+                :name="goPlanElements.name"
+                :price="goPlanElements.price"
+                :buttonText="goPlanElements.buttonText"
+                :backgroundColor="goPlanElements.backgroundColor"
+            />
         </div>
     </div>
 </template>
 
 <script>
-    import PricingBalloon from './PricingBalloon.vue';
+    import PricingBalloonBig from './PricingBalloonBig.vue';
+    import PricingBalloonSmall from './PricingBalloonSmall.vue';
     import { goPlanElements } from '/data/data.json';
 
     export default {
@@ -34,7 +48,8 @@
         },
 
         components: {
-            PricingBalloon
+            PricingBalloonBig,
+            PricingBalloonSmall
         }
     }
 </script>
@@ -48,8 +63,14 @@
         background-image: url("/src/assets/balloons.png");
         background-size: cover;
         height: 1024px;
+        position: relative;
+        padding: 1rem;
 
-        div.desktop {
+        @media screen and (max-width: 767px) {
+            background-position: 35%;
+        }
+
+        div.desktop div.container {
             @include flex(row, center, center, wrap);
 
             div.left-side {
