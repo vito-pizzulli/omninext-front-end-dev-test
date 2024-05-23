@@ -1,6 +1,6 @@
 <template>
     <div id="app-header">
-        <header id="header">
+        <header>
             <HeaderNavbar />
         </header>
     </div>

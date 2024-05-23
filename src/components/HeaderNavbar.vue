@@ -43,7 +43,7 @@
         nav {
             ul {
                 @include flex(row, space-between, center, wrap);
-                padding: 1rem;
+                height: 72px;
             }
 
             &.mobile ul li:first-of-type {
