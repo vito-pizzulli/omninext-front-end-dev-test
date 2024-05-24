@@ -3,6 +3,7 @@
         { "label": "Welfare aziendale", "link": "/welfare" },
         { "label": "Chi siamo", "link": "/about-us" },
         { "label": "I nostri servizi", "link": "/services" },
+        { "label": "Soluzioni welfare", "link": "/welfare-solutions"},
         { "label": "Blog", "link": "/blog" }
     ],
 
