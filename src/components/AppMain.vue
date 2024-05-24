@@ -4,6 +4,7 @@
             <PrimaryContent />
             <MobileApp />
             <CorporateWelfare />
+            <CollaboratorsWellness />
         </main>
     </div>
 </template>
@@ -12,6 +13,7 @@
     import PrimaryContent from './PrimaryContent.vue';
     import MobileApp from './MobileApp.vue';
     import CorporateWelfare from './CorporateWelfare.vue';
+    import CollaboratorsWellness from './CollaboratorsWellness.vue';
 
     export default {
         name: 'AppMain',
@@ -19,7 +21,8 @@
         components: {
             PrimaryContent,
             MobileApp,
-            CorporateWelfare
+            CorporateWelfare,
+            CollaboratorsWellness
         }
     }
 </script>
