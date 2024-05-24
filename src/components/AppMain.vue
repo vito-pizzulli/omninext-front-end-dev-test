@@ -2,18 +2,21 @@
     <div id="app-main">
         <main>
             <PrimaryContent />
+            <MobileApp />
         </main>
     </div>
 </template>
 
 <script>
     import PrimaryContent from './PrimaryContent.vue';
+    import MobileApp from './MobileApp.vue';
 
     export default {
         name: 'AppMain',
 
         components: {
-            PrimaryContent
+            PrimaryContent,
+            MobileApp
         }
     }
 </script>
