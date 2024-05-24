@@ -40,11 +40,11 @@
         "backgroundColor": "#e2e1f4"
     },
 
-    "carouselElements": [
+    "welfareElements": [
         { "label": "Cos'è il Welfare aziendale?", "text": "Tutti ne parlano ma pochi conoscono il suo potenziale", "imgUrl": "/src/assets/icon-hand.png" },
         { "label": "Come posso attrarre?", "text": "Fidelizza e attrai nuovi talenti con un piano welfare mirato", "imgUrl": "/src/assets/icon-magnet.png" },
         { "label": "Normative e vantaggi fiscali", "text": "Risparmiare è facile grazie al tuo nuovo piano welfare", "imgUrl": "/src/assets/icon-piggy.png" },
-        { "label": "Storie attrattive", "text": "Ascolta le testimonianze di chi ha migliorato il proprio stile di vita", "imgUrl": "/src/assets/barbell-hand.png" }
+        { "label": "Storie attrattive", "text": "Ascolta le testimonianze di chi ha migliorato il proprio stile di vita", "imgUrl": "/src/assets/icon-barbell.png" }
     ],
 
     "footerElements": {
