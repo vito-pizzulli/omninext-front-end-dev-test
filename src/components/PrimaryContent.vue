@@ -23,6 +23,7 @@
         <div class="mobile">
             <h2>Il Welfare aziendale a portata di PMI</h2>
             <p class="big">MySarma nasce con l'obiettivo di supportare le aziende a rispondere concretamente ai bisogni di welfare dei propri dipendenti e collaboratori.</p>
+            <p class="small">Da oggi puoi attivare il tuo piano welfare direttamente online ed in pochi semplici passaggi grazie al Piano GO!</p>
             <PricingBalloon 
                 :name="goPlanElements.name"
                 :price="goPlanElements.price"
@@ -60,13 +61,12 @@
         @include flex(row, center, center, wrap);
         background-image: url("/src/assets/balloons.png");
         background-size: cover;
-        height: 1024px;
         position: relative;
         padding: 1rem;
 
         @media screen and (max-width: 767px) {
             background-position: 35%;
-            height: 865px;
+            padding-bottom: 15rem;
         }
 
         div.desktop div.container {
