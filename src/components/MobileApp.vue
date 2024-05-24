@@ -8,14 +8,14 @@
                     <p><i class="fa-solid fa-arrow-right"></i> COMING SOON</p>
                 </div>
                 <div class="right-side">
-                    <img src="/src/assets/app.png" alt="App view image">
+                    <img src="/src/assets/app.svg" alt="App view image">
                 </div>
             </div>
         </div>
 
         <div class="mobile">
             <h2>App</h2>
-            <img src="/src/assets/app.png" alt="App view image">
+            <img src="/src/assets/app.svg" alt="App view image">
             <p class="big">Con l'app MySarma gestirai il tuo credito welfare e potrai accedere al catalogo dei Benefit e Servizi acquistabili.</p>
             <p><i class="fa-solid fa-arrow-right"></i> COMING SOON</p>
         </div>

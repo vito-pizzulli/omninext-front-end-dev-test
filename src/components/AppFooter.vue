@@ -3,8 +3,8 @@
         <footer>
             <div class="upper-section">
                 <div class="logo-section">
-                    <img src="/src/assets/logo-footer.png" alt="MySarma Logo">
-                    <img src="/src/assets/italian-flag-row.png" alt="Italian flag row">
+                    <img src="/src/assets/logo-footer.svg" alt="MySarma Logo">
+                    <img src="/src/assets/italian-flag-row.svg" alt="Italian flag row">
                     <p class="small">Il welfare aziendale tutto italiano a portata di PMI.</p>
                 </div>
                 <div class="footer-column" v-for="(footerElement, index) in footerElements" :key="index">
