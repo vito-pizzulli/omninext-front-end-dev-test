@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="left-side">
                     <h1>App</h1>
-                    <p class="big">Con l'app MySarma gestirai il tuo credito welfare e potrai accedere al catalogo dei Benefit e Servizi acquistabili.</p>
+                    <p class="big grey">Con l'app MySarma gestirai il tuo credito welfare e potrai accedere al catalogo dei Benefit e Servizi acquistabili.</p>
                     <p><i class="fa-solid fa-arrow-right"></i> COMING SOON</p>
                 </div>
                 <div class="right-side">
@@ -16,7 +16,7 @@
         <div class="mobile">
             <h2>App</h2>
             <img src="/src/assets/app.svg" alt="App view image">
-            <p class="big">Con l'app MySarma gestirai il tuo credito welfare e potrai accedere al catalogo dei Benefit e Servizi acquistabili.</p>
+            <p class="big grey">Con l'app MySarma gestirai il tuo credito welfare e potrai accedere al catalogo dei Benefit e Servizi acquistabili.</p>
             <p><i class="fa-solid fa-arrow-right"></i> COMING SOON</p>
         </div>
     </div>
@@ -34,26 +34,64 @@
 
     div#mobile-app {
         @include flex(row, center, center, wrap);
-        padding: 1rem;
+        margin: 8rem 1rem;
 
         div.desktop div.container {
             @include flex(row, center, center, wrap);
 
             div.left-side {
-                width: 60%;
+                width: 50%;
+
+                h1 {
+                    margin-bottom: 4rem;
+                    color: map-get(map-get($colors, Primary), 700);
+                }
+
+                p {
+                    width: 70%;
+                    margin-bottom: 7rem;
+
+                    &.grey {
+                        color: grey;
+                    }
+                }
+
+                i {
+                    margin-right: 1rem;
+                }
             }
 
             div.right-side {
-                width: 40%;
+                text-align: center;
+                width: 50%;
             }
         }
 
         div.mobile {
-            padding-top: 15rem;
+            margin-top: 11rem;
+            padding: 0 1rem;
+
+            h2 {
+                margin-bottom: 4rem;
+                color: map-get(map-get($colors, Primary), 700);
+            }
 
             img {
-                max-width: 80%;
+                width: 100%;
+                margin-bottom: 4rem;
             }
+
+            p {
+                    margin-bottom: 3rem;
+
+                    &.grey {
+                        color: grey;
+                    }
+                }
+
+                i {
+                    margin-right: 1rem;
+                }
         }
     }
 </style>
