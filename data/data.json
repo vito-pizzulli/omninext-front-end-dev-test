@@ -48,18 +48,35 @@
     ],
 
     "footerElements": {
-        "Chi siamo": [
-            { "label": "Vision & Mission", "link": "/vision-mission" },
-            { "label": "Il gruppo Omninext", "link": "/omninext" },
-            { "label": "Contattaci", "link": "/contact-us" }
-        ],
-        "Soluzioni welfare": [
-            { "label": "Flexible benefit", "link": "/flexible-benefit" },
-            { "label": "Premio di risultato", "link": "/reward" },
-            { "label": "Performance Management", "link": "/performance-management" }
-        ],
-        "Seguici su": [
-            { "label": "Linkedin", "link": "/linkedin" }
-        ]
+        "aboutUsElements": {
+            "name": "Chi siamo",
+            "items": [
+                { "label": "Vision & Mission", "link": "/vision-mission" },
+                { "label": "Il gruppo Omninext", "link": "/omninext" },
+                { "label": "Contattaci", "link": "/contact-us" }
+            ]
+        },
+        "welfareSolutionsElements": {
+            "name": "Soluzioni welfare",
+            "items": [
+                { "label": "Flexible benefit", "link": "/flexible-benefit" },
+                { "label": "Premio di risultato", "link": "/reward" },
+                { "label": "Performance Management", "link": "/performance-management" }
+            ]
+        },
+        "followUsElements": {
+            "name": "Seguici su",
+            "items": [
+                { "label": "Linkedin", "link": "/linkedin" }
+            ]
+        },
+        "availablePlansElements": {
+            "name": "Piani disponibili",
+            "items": [
+                { "label": "Piano GO!", "link": "/go-plan" },
+                { "label": "Piano PRO!", "link": "/pro-plan" },
+                { "label": "Diventa partner", "link": "/partner" }
+            ]
+        }
     }
 }
