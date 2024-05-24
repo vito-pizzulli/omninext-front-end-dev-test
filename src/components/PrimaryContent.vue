@@ -15,7 +15,7 @@
                         :backgroundColor="goPlanElements.backgroundColor"
                     />
                     <p>Cerchi un piano a misura per la tua azienda?</p>
-                    <p>Scopri il piano PRO</p>
+                    <p><u>Scopri il <strong>piano PRO</strong></u></p>
                 </div>
             </div>
         </div>
@@ -64,22 +64,51 @@
         background-image: url("/src/assets/balloons.png");
         background-size: cover;
         position: relative;
-        padding: 1rem;
+        color: white;
+        padding: 3rem 1rem 0;
 
         @media screen and (max-width: 767px) {
             background-position: 35%;
-            padding-bottom: 15rem;
+            padding-bottom: 16rem;
         }
 
         div.desktop div.container {
-            @include flex(row, center, center, wrap);
+            @include flex(row, end, center, wrap);
 
             div.left-side {
-                width: 60%;
+                width: 50%;
+                margin-bottom: 15rem;
+                margin-right: 10rem;
+
+                h1 {
+                    margin-bottom: 4rem;
+                    width: 88%;
+                }
+
+                p {
+                    width: 88%;
+                }
             }
 
             div.right-side {
-                width: 40%;
+                @include flex(column, center, end, no-wrap);
+                padding: 6rem 0;
+                width: 30%;
+
+                p {
+                    align-self: center
+                }
+            }
+        }
+
+        div.mobile {
+            h2 {
+                width: 60%;
+                margin-bottom: 2.5rem;
+            }
+
+            p {
+                margin-bottom: 2rem;
             }
         }
     }

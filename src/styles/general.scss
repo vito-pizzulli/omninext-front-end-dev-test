@@ -47,6 +47,10 @@ body {
         }
     }
 
+    u {
+        cursor: pointer;
+    }
+
     input {
         background-color: #F8FAFC;
         border-radius: 10px;
@@ -81,12 +85,12 @@ body {
         font-weight: 700;
         font-size: 14px;
         border-radius: 15px;
-        padding: .8rem 2rem;
+        padding: .8rem 1.5rem;
         border: none;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: map-get(map-get($colors, Black), 50);
+        background-color: white;
         cursor: pointer;
 
         &.small {
@@ -96,7 +100,7 @@ body {
     }
 
     .container {
-        width: 75%;
+        width: 85%;
         margin: auto;
     }
 
