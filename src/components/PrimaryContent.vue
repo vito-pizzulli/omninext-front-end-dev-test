@@ -80,6 +80,10 @@
                 margin-bottom: 15rem;
                 margin-right: 10rem;
 
+                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                    margin-right: 0;
+                }
+
                 h1 {
                     margin-bottom: 4rem;
                     width: 88%;
@@ -94,6 +98,10 @@
                 @include flex(column, center, end, no-wrap);
                 padding: 6rem 0;
                 width: 30%;
+
+                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                    width: 50%;
+                }
 
                 p {
                     align-self: center
