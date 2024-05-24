@@ -1,8 +1,10 @@
 <template>
     <div id="collaborators-wellness">
-        <p class="big">Sfrutta al meglio il tuo potenziale e fai crescere</p>
-        <h4>il benessere dei tuoi collaboratori</h4>
-        <p>Attiva subito un <strong>Piano Go</strong> oppure richiedi un preventivo gratuito per attivare un <strong>Piano Pro</strong>. Il nostro Welfare guru è pronto a consigliarti la migliore soluzione in base alle tue esigenze.</p>
+        <div class="container">
+            <p class="big">Sfrutta al meglio il tuo potenziale e fai crescere</p>
+            <h4>il benessere dei tuoi collaboratori</h4>
+            <p>Attiva subito un <strong>Piano Go</strong> oppure richiedi un preventivo gratuito per attivare un <strong>Piano Pro</strong>. Il nostro Welfare guru è pronto a consigliarti la migliore soluzione in base alle tue esigenze.</p>
+        </div>
     </div>
 </template>
 
