@@ -45,12 +45,7 @@ body {
         &.small {
             font-size: 16px;
         }
-
-        &.bold {
-            font-weight: 700;
-        }
     }
-
 
     input {
         background-color: #F8FAFC;
@@ -82,10 +77,17 @@ body {
     }
 
     button {
+        font-family: "Nunito", sans-serif;
         font-weight: 700;
-        font-size: 18px;
-        border-radius: 10px;
-        padding: 1rem 5rem;
+        font-size: 14px;
+        border-radius: 15px;
+        padding: .8rem 2rem;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: map-get(map-get($colors, Black), 50);
+        cursor: pointer;
 
         &.small {
             font-size: 12px;
@@ -96,6 +98,10 @@ body {
     .container {
         width: 75%;
         margin: auto;
+    }
+
+    .bold {
+        font-weight: 700;
     }
 
     @media screen and (max-width: 767px) {
