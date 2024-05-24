@@ -3,7 +3,7 @@
         <div class="container">
             <h1>Welfare aziendale?</h1>
             <p class="big">Te lo diciamo noi se non lo sai</p>
-            <div class="card-container">
+            <div class="cards-container">
                 <WelfareCard v-for="(welfareElement, index) in welfareElements" :key="index"
                     :label="welfareElement.label"
                     :text="welfareElement.text"
@@ -41,7 +41,7 @@
         div.container {
             text-align: center;
 
-            div.card-container {
+            div.cards-container {
                 @include flex(row, center, center, no-wrap);
 
                 @media screen and (max-width: 767px) {
