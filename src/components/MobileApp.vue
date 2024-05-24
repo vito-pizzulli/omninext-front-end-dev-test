@@ -34,7 +34,11 @@
 
     div#mobile-app {
         @include flex(row, center, center, wrap);
-        margin: 8rem 1rem;
+        padding: 8rem 1rem;
+
+        @media screen and (max-width: 767px) {
+            padding-bottom: 3rem;
+        }
 
         div.desktop div.container {
             @include flex(row, center, center, wrap);
@@ -50,10 +54,6 @@
                 p {
                     width: 70%;
                     margin-bottom: 7rem;
-
-                    &.grey {
-                        color: grey;
-                    }
                 }
 
                 i {
