@@ -68,11 +68,10 @@
         "followUsElements": {
             "name": "Seguici su",
             "items": [
-                { "label": "Linkedin", "link": "/linkedin" }
+                { "label": "Linkedin", "link": "/linkedin", "iconUrl": "/src/assets/icon-linkedin.svg" }
             ]
         },
         "availablePlansElements": {
-            "name": "Piani disponibili",
             "items": [
                 { "label": "Piano GO!", "link": "/go-plan" },
                 { "label": "Piano PRO!", "link": "/pro-plan" },
