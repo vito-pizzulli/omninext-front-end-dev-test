@@ -5,7 +5,7 @@
                 <div class="left-side">
                     <h1>App</h1>
                     <p class="big grey">Con l'app MySarma gestirai il tuo credito welfare e potrai accedere al catalogo dei Benefit e Servizi acquistabili.</p>
-                    <p><i class="fa-solid fa-arrow-right"></i> COMING SOON</p>
+                    <p class="coming-soon"><i class="fa-solid fa-arrow-right"></i> COMING SOON</p>
                 </div>
                 <div class="right-side">
                     <img src="/src/assets/app.svg" alt="App view image">
@@ -54,6 +54,15 @@
                 p {
                     width: 70%;
                     margin-bottom: 7rem;
+
+                    &.coming-soon {
+                        transition: all .1s ease;
+                        cursor: default;
+
+                        &:hover {
+                            font-weight: 700;
+                        }
+                    }
                 }
 
                 i {

@@ -10,7 +10,7 @@
             </div>
             <div class="right-side">
                 <p class="bold">Il tuo indirizzo email</p>
-                <input type="text">
+                <input type="text" name="email" placeholder="@">
                 <button>Invia</button>
             </div>
         </div>
@@ -85,6 +85,11 @@
                     display: inline-block;
                     border-radius: 10px;
                     padding: .8rem 2rem;
+                    transition: all .3s ease;
+
+                    &:hover {
+                        background-color: map-get(map-get($colors, Primary), 200);
+                    }
                 }
             }
         }

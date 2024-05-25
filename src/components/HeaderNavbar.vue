@@ -47,6 +47,11 @@
                 li {
                     button.login {
                         background-color: map-get(map-get($colors, Green), 200);
+                        transition: all .3s ease;
+
+                        &:hover {
+                            background-color: map-get(map-get($colors, Green), 500);;
+                        }
 
                         img {
                             margin-right: .5rem;

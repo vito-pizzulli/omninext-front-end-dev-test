@@ -113,6 +113,11 @@
             margin-bottom: 3rem;
             font-size: 18px;
             padding: 1rem 4rem;
+            transition: all .3s ease;
+
+            &:hover {
+                background-color: map-get(map-get($colors, Primary), 200);
+            }
         }
 
         div.price {

@@ -50,13 +50,24 @@
         color: map-get(map-get($colors, Black), 50);
 
         div.upper-section {
-            @include flex(row, space-around, start, wrap);
-            padding: 5rem 1rem 3rem;
+            @include flex(row, start, start, wrap);
+            gap: 5rem;
+            padding: 5rem 0rem 3rem;
+
+            @media screen and (max-width: 767px) {
+                justify-content: space-around;
+                padding: 5rem 1rem 3rem;
+                gap: 0;
+            }
 
             div.logo-section {
                 text-align: center;
-                @include flex(column, center, center, wrap);
+                @include flex(column, center, start, wrap);
                 margin-bottom: 4rem;
+
+                @media screen and (max-width: 767px) {
+                    align-items: center;
+                }
 
                 img.logo,
                 img.flag {
