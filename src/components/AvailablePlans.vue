@@ -56,7 +56,7 @@
         padding: 8rem 1.5rem;
 
         @media screen and (max-width: 767px) {
-            padding: 5rem 1.5rem;
+            padding: 5rem 1rem;
         }
 
         div.container {
@@ -93,6 +93,11 @@
                 @media screen and (max-width: 767px) {
                     flex-direction: column;
                     gap: 1rem;
+                }
+
+                div.left-side,
+                div.right-side {
+                    width: 100%;
                 }
             }
         }

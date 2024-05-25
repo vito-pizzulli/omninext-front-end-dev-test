@@ -56,7 +56,7 @@
     div.pricing-ballooon-big {
         width: 100%;
         color: black;
-        padding: 2.5rem 3rem;
+        padding: 2.5rem 1rem;
         border-radius: 30px;
         margin-bottom: 3rem;
         text-align: center;
