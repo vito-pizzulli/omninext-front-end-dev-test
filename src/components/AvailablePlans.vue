@@ -1,23 +1,28 @@
 <template>
     <div id="available-plans">
         <div class="container">
-            <h2>Attiva il tuo piano Go oppure Pro</h2>
-            <p class="big">Scegli se attivare subito il Piano Go oppure richiedere un preventivo per il Piano Pro al nostro consulente</p>
+            <h2 class="desktop">Attiva il tuo piano Go oppure Pro</h2>
+            <h3 class="mobile">Attiva il tuo piano Go oppure Pro</h3>
+            <p class="big grey">Scegli se attivare subito il Piano Go oppure richiedere un preventivo per il Piano Pro al nostro consulente</p>
             <div class="plans-container">
-                <PricingBalloonBig
-                    :name="goPlanElements.name"
-                    :price="goPlanElements.price"
-                    :vantages="goPlanElements.vantages"
-                    :buttonText="goPlanElements.buttonText"
-                    :backgroundColor="goPlanElements.backgroundColor"
-                />
-                <PricingBalloonBig
-                    :name="proPlanElements.name"
-                    :price="proPlanElements.price"
-                    :vantages="proPlanElements.vantages"
-                    :buttonText="proPlanElements.buttonText"
-                    :backgroundColor="proPlanElements.backgroundColor"
-                />
+                <div class="left-side">
+                    <PricingBalloonBig
+                        :name="goPlanElements.name"
+                        :price="goPlanElements.price"
+                        :vantages="goPlanElements.vantages"
+                        :buttonText="goPlanElements.buttonText"
+                        :backgroundColor="goPlanElements.backgroundColor"
+                    />
+                </div>
+                <div class="right-side">
+                    <PricingBalloonBig
+                        :name="proPlanElements.name"
+                        :price="proPlanElements.price"
+                        :vantages="proPlanElements.vantages"
+                        :buttonText="proPlanElements.buttonText"
+                        :backgroundColor="proPlanElements.backgroundColor"
+                    />
+                </div>
             </div>
         </div>
     </div>
@@ -48,14 +53,46 @@
     @use '../styles/partials/mixins' as *;
 
     div#available-plans {
+        padding: 8rem 1.5rem;
+
+        @media screen and (max-width: 767px) {
+            padding: 5rem 1.5rem;
+        }
+
         div.container {
             text-align: center;
 
+            h2,
+            h3 {
+                margin: auto;
+            }
+
+            h2 {
+                width: 25%;
+            }
+
+            h3 {
+                width: 70%;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                width: 37%;
+                margin: auto;
+                margin-bottom: 6rem;
+
+                @media screen and (max-width: 767px) {
+                    width: 90%;
+                }
+            }
+
             div.plans-container {
-                @include flex(row, center, center, no-wrap);
+                @include flex(row, center, start, no-wrap);
+                gap: 6rem;
 
                 @media screen and (max-width: 767px) {
                     flex-direction: column;
+                    gap: 1rem;
                 }
             }
         }
