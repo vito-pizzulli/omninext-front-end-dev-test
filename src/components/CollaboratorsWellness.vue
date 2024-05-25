@@ -21,7 +21,7 @@
     div#collaborators-wellness {
         background-image: url("/src/assets/go-plan-pattern.png");
         background-color: map-get(map-get($colors, Primary), 700);
-        padding: 8rem 1rem;
+        padding: 10rem 1rem;
 
         @media screen and (max-width: 767px) {
             padding: 8rem 2rem;
