@@ -13,8 +13,11 @@
                 <ul>
                     <li><img class="logo" src="/src/assets/logo-header.svg" alt="MySarma Logo"></li>
                     <li><button class="login"><img src="/src/assets/icon-exit.svg" alt="Access icon">Accedi</button></li>
-                    <li><button><img src="/src/assets/icon-hamburger.svg" alt="Hamburger icon"></button></li>
+                    <li><button v-if="!isDropdownVisible" @click="toggleDropdownVisibility"><img src="/src/assets/icon-hamburger.svg" alt="Hamburger icon"></button></li>
+                    <li><button v-if="isDropdownVisible" class="close-dropdown" @click="toggleDropdownVisibility"><i class="fa-solid fa-xmark"></i></button></li>
+                    
                 </ul>
+                <DropdownMenu v-if="isDropdownVisible" />
             </nav>
         </div>
     </div>
@@ -22,13 +25,25 @@
 
 <script>
     import { headerElements } from '/data/data.json';
+    import DropdownMenu from './DropdownMenu.vue';
 
     export default {
         name: 'HeaderNavbar',
 
         data() {
             return {
-                headerElements: headerElements
+                headerElements: headerElements,
+                isDropdownVisible: false
+            }
+        },
+
+        components: {
+            DropdownMenu
+        },
+
+        methods: {
+            toggleDropdownVisibility() {
+                this.isDropdownVisible = !this.isDropdownVisible;
             }
         }
     }
@@ -50,7 +65,7 @@
                         transition: all .3s ease;
 
                         &:hover {
-                            background-color: map-get(map-get($colors, Green), 500);;
+                            background-color: map-get(map-get($colors, Green), 500);
                         }
 
                         img {
@@ -85,6 +100,11 @@
                         filter: brightness(200%);
                         width: 25px;
                     }
+                }
+
+                button.close-dropdown {
+                    font-size: 2rem;
+
                 }
 
                 ul li:first-of-type {
