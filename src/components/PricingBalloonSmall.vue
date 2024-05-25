@@ -74,7 +74,10 @@
 
         hr {
             margin: 1rem 0;
-            border: 2px solid black;
+            border: 3px solid black;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
         }
 
         i {

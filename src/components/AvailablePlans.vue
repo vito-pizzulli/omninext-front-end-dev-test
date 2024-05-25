@@ -95,9 +95,11 @@
                     gap: 1rem;
                 }
 
-                div.left-side,
-                div.right-side {
-                    width: 100%;
+                @media screen and (max-width: 767px) {
+                    div.left-side,
+                    div.right-side {
+                        width: 100%;
+                    }
                 }
             }
         }

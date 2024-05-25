@@ -56,10 +56,14 @@
     div.pricing-ballooon-big {
         width: 100%;
         color: black;
-        padding: 2.5rem 1rem;
+        padding: 2.5rem 3rem;
         border-radius: 30px;
         margin-bottom: 3rem;
         text-align: center;
+
+        @media screen and (max-width: 767px) {
+            padding: 2.5rem 1rem;
+        }
 
         h4, p {
             color: map-get(map-get($colors, Primary), 500);
@@ -75,8 +79,10 @@
 
         hr {
             margin: 2rem 0;
-            border: 2px solid black;
-            border-width: 1.5px;
+            border-top: 3px solid black;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
         }
 
         span {
