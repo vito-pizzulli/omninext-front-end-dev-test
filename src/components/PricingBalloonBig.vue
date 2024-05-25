@@ -76,6 +76,7 @@
         hr {
             margin: 2rem 0;
             border: 2px solid black;
+            border-width: 1.5px;
         }
 
         span {

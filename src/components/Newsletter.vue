@@ -60,10 +60,10 @@
 
             div.right-side {
                 width: 40%;
-                text-align: end;
 
                 @media screen and (max-width: 767px) {
                     width: 100%;
+                    text-align: end;
                 }
 
                 p {
