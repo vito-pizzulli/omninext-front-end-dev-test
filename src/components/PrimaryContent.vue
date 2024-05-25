@@ -80,7 +80,7 @@
                 margin-bottom: 15rem;
                 margin-right: 10rem;
 
-                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
                     margin-right: 0;
                 }
 
@@ -99,7 +99,7 @@
                 padding: 6rem 0;
                 width: 30%;
 
-                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
                     width: 50%;
                 }
 

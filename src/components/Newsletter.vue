@@ -74,10 +74,10 @@
                 input {
                     margin-right: 4rem;
                     width: 60%;
+                    margin-bottom: 2rem;
 
                     @media screen and (max-width: 767px) {
                         width: 100%;
-                        margin-bottom: 2rem;
                     }
                 }
 
